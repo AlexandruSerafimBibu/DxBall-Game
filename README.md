@@ -3,6 +3,7 @@ The game is designed like DXBall.
 
 First of all, there's the menu:
 	-you can either start or choose the dificulty;
+	
 	-there are two dificulties: easy and hard (changing the speed of the ball);
 	-at the end-game you either win or lose. Either way, you get a message;
 	-to select something/move forward in menu press the joystick.
