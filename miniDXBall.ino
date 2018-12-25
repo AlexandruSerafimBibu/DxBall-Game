@@ -44,6 +44,16 @@ unsigned long t0_board = 0, t1 = 0, t0_ball = 0, t0_magnet = 0, t0_magnet_start;
 bool magnet_on = false, sticky = false;// if sticky is true, then the ball stays on the board.
 int brick_number;//Number of bricks left in the current level.
 
+void Merry_Christmas()
+{
+  lcd.clear();
+  lcd.write("  Ho, ho, ho...");
+  lcd.setCursor(0,1);
+  lcd.write("Merry Christmas!");
+  delay(10000);
+}
+
+
 void update_LCD (char s)
 {
   //I'm not using "lcd.clear()" because it will crash really fast.
@@ -318,6 +328,7 @@ void setup()
   lc.setIntensity(0, 2); // set the brightness.
   lc.clearDisplay(0);    // turns every led off.
   Serial.begin(9600);
+  Merry_Christmas();//Christmas special.
   
   //Make the brick_matrix without bricks
   for (int i = 0; i < 8; i++)
