@@ -50,7 +50,7 @@ void Merry_Christmas()
   lcd.write("  Ho, ho, ho...");
   lcd.setCursor(0,1);
   lcd.write("Merry Christmas!");
-  delay(10000);
+  delay(5000);
 }
 
 
